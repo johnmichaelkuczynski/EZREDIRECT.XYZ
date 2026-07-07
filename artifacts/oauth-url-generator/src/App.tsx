@@ -37,9 +37,26 @@ function Home() {
     <div className="min-h-[100dvh] w-full bg-background text-foreground flex flex-col font-sans">
       <header className="border-b border-border bg-card/50 backdrop-blur-md sticky top-0 z-10">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2 text-primary">
-            <Terminal className="h-5 w-5" />
-            <h1 className="font-bold text-lg tracking-tight text-foreground">OAuth URL Generator</h1>
+          <div className="flex items-center gap-3">
+            <div className="flex flex-col items-center gap-0.5">
+              <img
+                src={zhiLogo}
+                alt="ZHI logo"
+                className="h-8 w-8 rounded-md opacity-70 hover:opacity-100 transition-opacity"
+                data-testid="img-zhi-logo"
+              />
+              <a
+                href="mailto:zhi@zhisystems.org"
+                className="text-[9px] leading-none text-muted-foreground hover:text-primary transition-colors whitespace-nowrap"
+                data-testid="link-contact-us"
+              >
+                Contact Us
+              </a>
+            </div>
+            <div className="flex items-center gap-2 text-primary">
+              <Terminal className="h-5 w-5" />
+              <h1 className="font-bold text-lg tracking-tight text-foreground">OAuth URL Generator</h1>
+            </div>
           </div>
           <div className="text-xs text-muted-foreground flex items-center gap-2">
             <Zap className="h-3 w-3 text-primary" />
@@ -145,22 +162,6 @@ function Home() {
           </div>
         </div>
       </main>
-
-      <div className="fixed bottom-4 left-4 z-20 flex flex-col items-center gap-1.5">
-        <img
-          src={zhiLogo}
-          alt="ZHI logo"
-          className="h-9 w-9 rounded-md opacity-60 hover:opacity-100 transition-opacity"
-          data-testid="img-zhi-logo"
-        />
-        <a
-          href="mailto:zhi@zhisystems.org"
-          className="text-[11px] text-muted-foreground hover:text-primary transition-colors"
-          data-testid="link-contact-us"
-        >
-          Contact Us
-        </a>
-      </div>
     </div>
   );
 }
