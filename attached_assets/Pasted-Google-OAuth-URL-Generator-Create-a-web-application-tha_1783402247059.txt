@@ -1,0 +1,144 @@
+Google OAuth URL Generator
+
+Create a web application that accepts from 1 to 50 domain names and generates all standard Google OAuth Authorized JavaScript origins and Authorized redirect URIs for each domain.
+
+Input
+
+The application accepts 1–50 domain names.
+
+Domains may be separated by:
+
+Line breaks
+Spaces
+Commas
+Semicolons
+
+Each domain may be entered in any of the following forms:
+
+example.com
+www.example.com
+https://example.com
+https://www.example.com
+
+The application must ignore capitalization. For example, all of the following are treated identically:
+
+APPLE.COM
+Apple.Com
+https://APPLE.COM
+https://www.Apple.Com
+
+Every generated URL must be lowercase.
+
+The application must automatically remove any leading https://, http://, and www. before generating the output.
+
+Output
+
+For every input domain, generate the following.
+
+Authorized JavaScript origins
+https://domain
+https://www.domain
+Authorized redirect URIs
+https://domain/auth/google/callback
+https://domain/api/auth/google/callback
+https://www.domain/auth/google/callback
+https://www.domain/api/auth/google/callback
+
+The order must always be exactly as shown above.
+
+Formatting Requirements
+Generate one complete block for each input domain.
+Preserve the order in which the domains were entered.
+No commentary.
+No explanations.
+No numbering.
+No bullets in the output.
+No extra text.
+Every generated line must be immediately ready to copy and paste into the Google Cloud Console.
+The output should be clean, highly readable, and visually separated between domains.
+Example Input
+APPLE.COM
+constructivereasoning.xyz
+https://www.ezhw.ink
+OCRPRO.SHOP
+example.net
+Example Output
+==================================================
+apple.com
+==================================================
+
+Authorized JavaScript origins
+
+https://apple.com
+https://www.apple.com
+
+Authorized redirect URIs
+
+https://apple.com/auth/google/callback
+https://apple.com/api/auth/google/callback
+https://www.apple.com/auth/google/callback
+https://www.apple.com/api/auth/google/callback
+
+==================================================
+constructivereasoning.xyz
+==================================================
+
+Authorized JavaScript origins
+
+https://constructivereasoning.xyz
+https://www.constructivereasoning.xyz
+
+Authorized redirect URIs
+
+https://constructivereasoning.xyz/auth/google/callback
+https://constructivereasoning.xyz/api/auth/google/callback
+https://www.constructivereasoning.xyz/auth/google/callback
+https://www.constructivereasoning.xyz/api/auth/google/callback
+
+==================================================
+ezhw.ink
+==================================================
+
+Authorized JavaScript origins
+
+https://ezhw.ink
+https://www.ezhw.ink
+
+Authorized redirect URIs
+
+https://ezhw.ink/auth/google/callback
+https://ezhw.ink/api/auth/google/callback
+https://www.ezhw.ink/auth/google/callback
+https://www.ezhw.ink/api/auth/google/callback
+
+==================================================
+ocrpro.shop
+==================================================
+
+Authorized JavaScript origins
+
+https://ocrpro.shop
+https://www.ocrpro.shop
+
+Authorized redirect URIs
+
+https://ocrpro.shop/auth/google/callback
+https://ocrpro.shop/api/auth/google/callback
+https://www.ocrpro.shop/auth/google/callback
+https://www.ocrpro.shop/api/auth/google/callback
+
+==================================================
+example.net
+==================================================
+
+Authorized JavaScript origins
+
+https://example.net
+https://www.example.net
+
+Authorized redirect URIs
+
+https://example.net/auth/google/callback
+https://example.net/api/auth/google/callback
+https://www.example.net/auth/google/callback
+https://www.example.net/api/auth/google/callback
