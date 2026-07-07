@@ -9,6 +9,7 @@ import { DomainOutput } from "@/components/domain-output";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Copy, Check, Terminal, Zap, Trash2 } from "lucide-react";
+import zhiLogo from "@assets/image_1783404397824.png";
 
 const queryClient = new QueryClient();
 
@@ -144,6 +145,22 @@ function Home() {
           </div>
         </div>
       </main>
+
+      <div className="fixed bottom-4 left-4 z-20 flex flex-col items-center gap-1.5">
+        <img
+          src={zhiLogo}
+          alt="ZHI logo"
+          className="h-9 w-9 rounded-md opacity-60 hover:opacity-100 transition-opacity"
+          data-testid="img-zhi-logo"
+        />
+        <a
+          href="mailto:zhi@zhisystems.org"
+          className="text-[11px] text-muted-foreground hover:text-primary transition-colors"
+          data-testid="link-contact-us"
+        >
+          Contact Us
+        </a>
+      </div>
     </div>
   );
 }
