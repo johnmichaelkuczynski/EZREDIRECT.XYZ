@@ -38,21 +38,24 @@ function Home() {
       <header className="border-b border-border bg-card/50 backdrop-blur-md sticky top-0 z-10">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="flex flex-col items-center gap-0.5">
+            <a
+              href="https://zhisystems.ai"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="ZHI Systems — visit zhisystems.ai"
+              className="flex flex-col items-center gap-0.5 rounded-sm transition-opacity hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+              data-testid="link-zhi-systems"
+            >
               <img
                 src={zhiLogo}
                 alt="ZHI logo"
-                className="h-8 w-8 rounded-md opacity-70 hover:opacity-100 transition-opacity"
+                className="h-8 w-8 rounded-md"
                 data-testid="img-zhi-logo"
               />
-              <a
-                href="mailto:zhi@zhisystems.org"
-                className="text-[9px] leading-none text-muted-foreground hover:text-primary transition-colors whitespace-nowrap"
-                data-testid="link-contact-us"
-              >
-                Contact Us
-              </a>
-            </div>
+              <span className="text-[9px] font-semibold leading-none tracking-wide text-muted-foreground whitespace-nowrap">
+                ZHI SYSTEMS
+              </span>
+            </a>
             <div className="flex items-center gap-2 text-primary">
               <Terminal className="h-5 w-5" />
               <h1 className="font-bold text-lg tracking-tight text-foreground">OAuth URL Generator</h1>
