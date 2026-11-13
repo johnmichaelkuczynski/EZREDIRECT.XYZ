@@ -1,0 +1,1 @@
+- [Git mutation safety wrapper](git-safety-wrapper.md) — user-authorized Git writes may require an explicit safety prefix in this workspace.

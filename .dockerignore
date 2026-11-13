@@ -1,0 +1,12 @@
+.git
+.cache
+.local
+.expo
+coverage
+.env*
+!.env.example
+node_modules
+**/node_modules
+**/dist
+attached_assets/*
+!attached_assets/image_1783404397824.png
